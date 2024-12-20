@@ -74,5 +74,6 @@ fi
 
 # Perform any additional setup tasks here
 python -m venv .venv
+# shellcheck source=/dev/null
 . .venv/bin/activate
 pip install -r requirements.txt

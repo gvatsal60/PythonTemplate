@@ -55,6 +55,7 @@ yarn-error.log
 *.pyc
 *.pyo
 __pycache__/
+.venv/
 
 # Java
 *.class
