@@ -47,7 +47,7 @@ def create_and_activate_venv():
         sys.exit(1)
 
     # Install the requirements inside the virtual environment
-    pip_install_command = 'pip install --upgrade -r requirements.txt'
+    pip_install_command = 'pip install --upgrade --no-cache-dir -r requirements.txt'
 
     if os.name == 'nt':  # Windows
         venv_pip_install_command = (
