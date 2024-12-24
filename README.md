@@ -8,7 +8,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/gvatsal60/PythonTemplate)
 ![GitHub stars](https://img.shields.io/github/stars/gvatsal60/PythonTemplate)
 
-This repository serves as a foundational template for new projects,
+This repository serves as a foundational template for new python projects,
 equipped with essential tools for maintaining code quality and documentation consistency.
 It includes:
 
@@ -26,7 +26,7 @@ To install PythonTemplate, follow these steps:
 
 1. **Clone the repository:**
 
-   ```bash
+   ```sh
    git clone https://github.com/gvatsal60/PythonTemplate.git
    cd PythonTemplate
    ```
