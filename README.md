@@ -29,6 +29,7 @@ To install PythonTemplate, follow these steps:
    ```sh
    git clone https://github.com/gvatsal60/PythonTemplate.git
    cd PythonTemplate
+   python activate.py
    ```
 
 2. **Customize According to Your Project:**
