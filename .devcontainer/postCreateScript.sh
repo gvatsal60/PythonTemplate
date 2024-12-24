@@ -72,8 +72,5 @@ if [ -n "${CODESPACE_NAME}" ]; then
     fi
 fi
 
-# Perform any additional setup tasks here
-python -m venv .venv
-# shellcheck source=/dev/null
-. .venv/bin/activate
-pip install -r requirements.txt
+# Perform python additional setup tasks here
+python ../activate.py
