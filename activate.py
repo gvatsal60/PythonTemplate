@@ -70,7 +70,7 @@ def create_and_activate_venv():
     else:  # Linux and MacOS
         activate_command = '. ./{venv_dir}/bin/activate'
 
-    print("\nRun the following command to activate the virtual environment:\n"
+    print('\nRun the following command to activate the virtual environment:\n'
           f"{activate_command.format(venv_dir=venv_dir)}\n"
           )
 
