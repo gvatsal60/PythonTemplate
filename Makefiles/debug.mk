@@ -8,16 +8,20 @@ DOCKER_BUILD_CMD := $(DOCKER_HOST) image build -t $(DOCKER_IMG_NAME) -f $(DOCKER
 DOCKER_RUN_CMD := $(DOCKER_HOST) container run $(DOCKER_ARG) $(DOCKER_IMG_NAME)
 
 # Define the default target
-.PHONY: all test clean
+.PHONY: all build test clean
 
 # Target: all
-all: run
+all: build
 
 # Target: build_img
 # Description: Builds the Docker image using the specified Dockerfile
 .PHONY: build_img
 build_img:
 	@$(DOCKER_BUILD_CMD)
+
+# Build code
+build: build_img
+	@$(DOCKER_RUN_CMD) $(BUILD_CMD)
 
 # Test code
 test: build_img

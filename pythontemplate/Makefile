@@ -4,9 +4,12 @@ INC_DIR := inc
 SRC_DIR := src
 TEST_DIR := test/src
 
-.PHONY: all test clean
+.PHONY: all build test clean
 
-all: run
+all: build
+
+build:
+	@echo "Building project..."
 
 test:
 	@echo "Building tests..."

@@ -1,10 +1,12 @@
-include cfg/.env
 include Makefiles/rules.mk
 
 # Targets
-.PHONY: all test clean
+.PHONY: all build test clean
 
-all: run
+all: build
+
+build:
+	@$(BUILD_CMD)
 
 test:
 	@$(TEST_CMD)
