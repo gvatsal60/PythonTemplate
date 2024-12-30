@@ -3,8 +3,10 @@
 
 NPROC := $(shell nproc)
 
+FILE ?=
+
 BUILD_TOOL_CMD := make -j$(NPROC) -C $(TOP_DIR)
 BUILD_CMD := $(BUILD_TOOL_CMD) build
 TEST_CMD := $(BUILD_TOOL_CMD) test
-RUN_CMD := $(BUILD_TOOL_CMD) run
+RUN_CMD := $(BUILD_TOOL_CMD) run FILE=$(FILE)
 CLEAN_CMD := $(BUILD_TOOL_CMD) clean

@@ -7,8 +7,10 @@ TEST_DIR := tests
 
 ifeq ($(OS), Windows_NT)
 	RMDIR:=rmdir /s /q
+	VENV_PYTHON:=.\.venv\Scripts\python.exe
 else
 	RMDIR:=rm -rf
+	VENV_PYTHON:=./.venv/bin/python
 endif
 
 BUILD_PY_ENV := activate.py
@@ -30,7 +32,7 @@ run:
 	@if [ -z "$(FILE)" ]; then \
 		FILE=$(MAIN_PY); \
 	fi; \
-	$(PYTHON) $(SRC_DIR)/$$FILE
+	$(VENV_PYTHON) $(SRC_DIR)/$$FILE
 
 clean:
 	@echo "Cleaning project..."

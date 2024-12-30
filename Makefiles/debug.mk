@@ -29,7 +29,7 @@ test: build_img
 
 # Run code
 run: build_img
-	@$(DOCKER_RUN_CMD) $(RUN_CMD)
+	@$(DOCKER_RUN_CMD) $(RUN_CMD) FILE=$(FILE)
 
 # Clean
 clean: build_img

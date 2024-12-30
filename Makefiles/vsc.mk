@@ -12,7 +12,7 @@ test:
 	@$(TEST_CMD)
 
 run:
-	@$(RUN_CMD)
+	@$(RUN_CMD) FILE=$(FILE)
 
 clean:
 	@$(CLEAN_CMD)
