@@ -71,6 +71,3 @@ if [ -n "${CODESPACE_NAME}" ]; then
         done
     fi
 fi
-
-# Perform python additional setup tasks here
-python ../activate.py
