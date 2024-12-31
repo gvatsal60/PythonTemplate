@@ -20,22 +20,59 @@ It includes:
 6. FUNDING.yml
 7. CHANGELOG.md
 
-## Installation
+## Table of Contents
 
-To install PythonTemplate, follow these steps:
+1. [Getting Started](#getting-started)
+2. [Build](#build)
+3. [Run](#run)
+4. [Testing](#testing-todo)
+5. [Cleaning](#cleaning)
 
-1. **Clone the repository:**
+## Getting Started
 
-   ```sh
-   git clone https://github.com/gvatsal60/PythonTemplate.git
-   cd PythonTemplate
-   python activate.py
-   ```
+To get started with the project, ensure you have `Python 3` installed on your system.
 
-2. **Customize According to Your Project:**
-   * Replace `[Project Name]`
-   * Update `[contact email]`
-   * Follow `[coding style guide]`
+## Build
+
+To create virtualenv and install requirements for the project, run the following command:
+
+```sh
+make build
+```
+
+## Run
+
+To run the main file, use the following command:
+
+```sh
+make run
+```
+
+You can also specify a particular file to run by adding the FILE variable:
+
+Note: Path need to be mentioned if it's in a directory
+
+```sh
+make run FILE=file_name.py
+or
+make run FILE=app/app.py
+```
+
+## Testing (TODO)
+
+To run the tests, use the following command:
+
+```sh
+make test
+```
+
+## Cleaning
+
+To clean the project directory, removing all compiled Python files, use the following command:
+
+```sh
+make clean
+```
 
 ## Contributing
 
