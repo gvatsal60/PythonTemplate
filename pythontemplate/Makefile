@@ -36,9 +36,6 @@ run:
 
 clean:
 	@echo "Cleaning project..."
-	$(RMDIR) $(SRC_DIR)/*.pyc \
-		$(SRC_DIR)/*.pyo \
-		$(SRC_DIR)/*.pyd \
-		$(SRC_DIR)/*.pyw \
-		$(SRC_DIR)/*.pyz \
-		$(SRC_DIR)/*.pyzw
+	$(RMDIR) $(SRC_DIR)/*.pyc $(SRC_DIR)/*.pyo \
+		$(SRC_DIR)/*.pyd $(SRC_DIR)/*.pyw \
+		$(SRC_DIR)/*.pyz $(SRC_DIR)/*.pyzw
