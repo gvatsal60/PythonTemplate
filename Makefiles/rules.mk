@@ -1,3 +1,5 @@
+include cfg/.env
+
 # Targets
 .PHONY: all test clean
 
