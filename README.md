@@ -25,7 +25,7 @@ It includes:
 1. [Getting Started](#getting-started)
 2. [Build](#build)
 3. [Run](#run)
-4. [Testing](#testing-todo)
+4. [Testing](#testing)
 5. [Cleaning](#cleaning)
 
 ## Getting Started
@@ -58,12 +58,20 @@ or
 make run FILE=app/app.py
 ```
 
-## Testing (TODO)
+## Testing
 
 To run the tests, use the following command:
 
 ```sh
 make test
+```
+
+You can also specify a particular file to test by adding the FILE variable:
+
+Note: Path need to be mentioned if it's in a directory
+
+```sh
+make test FILE=file_name.py
 ```
 
 ## Cleaning

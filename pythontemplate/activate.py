@@ -67,16 +67,6 @@ def create_and_activate_venv():
         print(f"An error occurred while installing requirements: {e}")
         sys.exit(1)
 
-    # Print the command to activate the virtual environment to the console
-    # if os.name == 'nt':  # Windows
-    #     activate_command = r'.\{venv_dir}\Scripts\activate'
-    # else:  # Linux and MacOS
-    #     activate_command = '. ./{venv_dir}/bin/activate'
-
-    # print('\nRun the following command to activate the virtual environment:\n'
-    #       f"{activate_command.format(venv_dir=venv_dir)}\n"
-    #       )
-
 
 if __name__ == '__main__':
     create_and_activate_venv()

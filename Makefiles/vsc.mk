@@ -9,7 +9,7 @@ build:
 	@$(BUILD_CMD)
 
 test:
-	@$(TEST_CMD)
+	@$(TEST_CMD) FILE=$(FILE)
 
 run:
 	@$(RUN_CMD) FILE=$(FILE)
