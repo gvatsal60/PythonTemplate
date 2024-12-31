@@ -27,6 +27,11 @@ build:
 
 test:
 	@echo "Building tests..."
+	@if [ -z "$(FILE)" ]; then \
+		$(VENV_PYTHON) -m unittest discover -v $(TEST_DIR) "*_test.py"; \
+	else \
+		$(VENV_PYTHON) -m unittest -v $(TEST_DIR)/$$FILE; \
+	fi
 
 run:
 	@echo "Running project..."
@@ -37,6 +42,6 @@ run:
 
 clean:
 	@echo "Cleaning project..."
-	@$(RMDIR) $(VENV_DIR) $(SRC_DIR)/*.pyc $(SRC_DIR)/*.pyo \
-		$(SRC_DIR)/*.pyd $(SRC_DIR)/*.pyw \
-		$(SRC_DIR)/*.pyz $(SRC_DIR)/*.pyzw
+	@$(RMDIR) $(VENV_DIR) \
+		$(SRC_DIR)/__pycache__ \
+		$(TEST_DIR)/__pycache__
