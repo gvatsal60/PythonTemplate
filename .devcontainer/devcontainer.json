@@ -1,4 +1,7 @@
 {
+  "build": {
+    "dockerfile": "../dockerfiles/Dockerfile.debug"
+  },
   "capAdd": [
     "SYS_PTRACE"
   ],
@@ -94,7 +97,6 @@
       "nodeGypDependencies": false
     }
   },
-  "image": "mcr.microsoft.com/devcontainers/python:latest",
   "mounts": [
     "source=${localWorkspaceFolder}/snippets,target=${containerWorkspaceFolder}/.vscode,type=bind,consistency=cached"
   ],

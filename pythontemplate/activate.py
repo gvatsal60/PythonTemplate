@@ -47,7 +47,10 @@ def create_and_activate_venv():
         sys.exit(1)
 
     # Install the requirements inside the virtual environment
-    pip_install_command = 'pip install --upgrade --no-cache-dir -r requirements.txt'
+    requirements_file = 'requirements.txt'
+    pip_install_command = (
+        f'pip install --upgrade --no-cache-dir -r {requirements_file}'
+    )
 
     if os.name == 'nt':  # Windows
         venv_pip_install_command = (
@@ -65,14 +68,14 @@ def create_and_activate_venv():
         sys.exit(1)
 
     # Print the command to activate the virtual environment to the console
-    if os.name == 'nt':  # Windows
-        activate_command = r'.\{venv_dir}\Scripts\activate'
-    else:  # Linux and MacOS
-        activate_command = '. ./{venv_dir}/bin/activate'
+    # if os.name == 'nt':  # Windows
+    #     activate_command = r'.\{venv_dir}\Scripts\activate'
+    # else:  # Linux and MacOS
+    #     activate_command = '. ./{venv_dir}/bin/activate'
 
-    print('\nRun the following command to activate the virtual environment:\n'
-          f"{activate_command.format(venv_dir=venv_dir)}\n"
-          )
+    # print('\nRun the following command to activate the virtual environment:\n'
+    #       f"{activate_command.format(venv_dir=venv_dir)}\n"
+    #       )
 
 
 if __name__ == '__main__':
