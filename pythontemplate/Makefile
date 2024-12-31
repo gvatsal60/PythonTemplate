@@ -4,6 +4,7 @@ PYTHON := python3
 
 SRC_DIR := src
 TEST_DIR := tests
+VENV_DIR := .venv
 
 ifeq ($(OS), Windows_NT)
 	RMDIR:=rmdir /s /q
@@ -22,7 +23,7 @@ all: build
 
 build:
 	@echo "Building project..."
-	$(PYTHON) $(BUILD_PY_ENV)
+	@$(PYTHON) $(BUILD_PY_ENV)
 
 test:
 	@echo "Building tests..."
@@ -36,6 +37,6 @@ run:
 
 clean:
 	@echo "Cleaning project..."
-	$(RMDIR) $(SRC_DIR)/*.pyc $(SRC_DIR)/*.pyo \
+	@$(RMDIR) $(VENV_DIR) $(SRC_DIR)/*.pyc $(SRC_DIR)/*.pyo \
 		$(SRC_DIR)/*.pyd $(SRC_DIR)/*.pyw \
 		$(SRC_DIR)/*.pyz $(SRC_DIR)/*.pyzw
