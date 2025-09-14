@@ -1,0 +1,16 @@
+[project]
+name = "pythontemplate"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "flask>=3.1.2",
+    "werkzeug>=3.0.6",
+    "zipp>=3.19.1",
+]
+
+[dependency-groups]
+dev = [
+    "uvicorn>=0.35.0",
+]

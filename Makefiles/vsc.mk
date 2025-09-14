@@ -11,8 +11,9 @@ build:
 test:
 	@$(TEST_CMD) FILE=$(FILE)
 
-run:
-	@$(RUN_CMD) FILE=$(FILE)
+# FIXME: This target currently does not work as expected
+# run:
+# 	@$(RUN_CMD) FILE=$(FILE)
 
 clean:
 	@$(CLEAN_CMD)
