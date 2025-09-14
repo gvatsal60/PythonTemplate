@@ -2,7 +2,7 @@
 
 UV := uv
 PYTHON := python
-RMDIR:=rm -rf
+RMDIR := rm -rf
 
 SRC_DIR := src
 TEST_DIR := tests
