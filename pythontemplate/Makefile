@@ -1,6 +1,7 @@
 # Compiler and flags
 
 UV := uv
+PYTHON := python
 RMDIR:=rm -rf
 
 SRC_DIR := src
@@ -15,12 +16,12 @@ all: build
 
 build:
 	@if [ ! -d "$(VENV_DIR)" ]; then $(UV) venv; fi
-	$(UV) add --no-cache -r requirements.txt
-	$(UV) add --dev --no-cache -r dev-requirements.txt
+	@$(UV) add --no-cache -r requirements.txt
+	@$(UV) add --dev --no-cache -r dev-requirements.txt
 
 test:
-	@if [ -z "$(FILE)" ]; then $(UV) run unittest discover -v $(TEST_DIR) "*_test.py"; \
-	else $(UV) run unittest -v $(TEST_DIR)/$$FILE; fi
+	@if [ -z "$(FILE)" ]; then $(UV) run $(PYTHON) -m unittest discover -v -s $(TEST_DIR) -p "*_test.py"; \
+	else $(UV) run $(PYTHON) -m unittest -v $(TEST_DIR)/$$FILE; fi
 
 # FIXME: This target currently does not work as expected
 # run:
