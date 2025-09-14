@@ -1,6 +1,6 @@
 def main():
-    print("Hello from pythontemplate!")
+    print('Hello from pythontemplate!')
 
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
