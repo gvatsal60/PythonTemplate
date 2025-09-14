@@ -27,9 +27,10 @@ build: build_img
 test: build_img
 	@$(DOCKER_RUN_CMD) $(TEST_CMD) FILE=$(FILE)
 
-# Run code
-run: build_img
-	@$(DOCKER_RUN_CMD) $(RUN_CMD) FILE=$(FILE)
+# FIXME: This target currently does not work as expected
+# # Run code
+# run: build_img
+# 	@$(DOCKER_RUN_CMD) $(RUN_CMD) FILE=$(FILE)
 
 # Clean
 clean: build_img

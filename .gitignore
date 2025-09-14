@@ -57,6 +57,7 @@ yarn-error.log
 __pycache__/
 .venv/
 .mypy_cache/
+uv.lock
 
 # Java
 *.class

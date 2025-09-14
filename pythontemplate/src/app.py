@@ -1,6 +1,10 @@
 from flask import Flask
+from flask_wtf.csrf import CSRFProtect
 
 app = Flask(__name__)
+app.config['WTF_CSRF_ENABLED'] = True  # Sensitive
+
+csrf = CSRFProtect(app)  # Initialize CSRF protection
 
 
 @app.route('/')

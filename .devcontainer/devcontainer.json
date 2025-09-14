@@ -10,10 +10,10 @@
       "extensions": [
         "DavidAnson.vscode-markdownlint",
         "Gruntfuggly.todo-tree",
-        "PKief.material-icon-theme",
         "SonarSource.sonarlint-vscode",
         "Tyriar.sort-lines",
         "bradzacher.vscode-copy-filename",
+        "charliermarsh.ruff",
         "esbenp.prettier-vscode",
         "foxundermoon.shell-format",
         "ms-python.autopep8",
@@ -30,33 +30,6 @@
         "usernamehw.errorlens"
       ],
       "settings": {
-        "[dockercompose]": {
-          "editor.autoIndent": "advanced",
-          "editor.defaultFormatter": "ms-azuretools.vscode-docker",
-          "editor.insertSpaces": true,
-          "editor.quickSuggestions": {
-            "comments": false,
-            "other": true,
-            "strings": true
-          },
-          "editor.tabSize": 2,
-          "files.eol": "\n"
-        },
-        "[dockerfile]": {
-          "editor.defaultFormatter": "ms-azuretools.vscode-docker",
-          "editor.quickSuggestions": {
-            "strings": true
-          },
-          "files.eol": "\n"
-        },
-        "[markdown]": {
-          "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-        },
-        "[shellscript]": {
-          "editor.defaultFormatter": "foxundermoon.shell-format",
-          "editor.tabSize": 4,
-          "files.eol": "\n"
-        },
         "editor.bracketPairColorization.enabled": true,
         "editor.comments.insertSpace": true,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -67,7 +40,6 @@
         "editor.tabSize": 2,
         "editor.trimAutoWhitespace": true,
         "explorer.confirmDelete": false,
-        "extensions.autoUpdate": true,
         "extensions.ignoreRecommendations": true,
         "files.associations": {
           "*.code-snippets": "jsonc"
@@ -85,16 +57,8 @@
           "**/bower_components": true,
           "**/node_modules": true
         },
-        "telemetry.telemetryLevel": "off",
-        "windows.title": "${folderPath}",
-        "workbench.iconTheme": "material-icon-theme",
         "workbench.startupEditor": "none"
       }
-    }
-  },
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {
-      "nodeGypDependencies": false
     }
   },
   "mounts": [
