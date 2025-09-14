@@ -16,8 +16,8 @@ all: build
 
 build:
 	@if [ ! -d "$(VENV_DIR)" ]; then $(UV) venv; fi
-	@$(UV) add --no-cache -r requirements.txt
-	@$(UV) add --dev --no-cache -r dev-requirements.txt
+	@$(UV) pip install -r requirements.txt
+	@$(UV) pip install -r dev-requirements.txt
 
 test:
 	@if [ -z "$(FILE)" ]; then $(UV) run $(PYTHON) -m unittest discover -v -s $(TEST_DIR) -p "*_test.py"; \
