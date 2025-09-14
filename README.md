@@ -2,6 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://img.shields.io/github/license/gvatsal60/PythonTemplate)
 [![pre-commit.ci status](https://results.pre-commit.ci/badge/github/gvatsal60/PythonTemplate/master.svg)](https://results.pre-commit.ci/latest/github/gvatsal60/PythonTemplate/HEAD)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/0eb4ef60c5ad4dba8cd0a5c9f1055726)](https://app.codacy.com/gh/gvatsal60/PythonTemplate/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade)
 [![CodeFactor](https://www.codefactor.io/repository/github/gvatsal60/PythonTemplate/badge)](https://www.codefactor.io/repository/github/gvatsal60/PythonTemplate)
 ![GitHub pull-requests](https://img.shields.io/github/issues-pr/gvatsal60/PythonTemplate)
 ![GitHub Issues](https://img.shields.io/github/issues/gvatsal60/PythonTemplate)

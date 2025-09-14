@@ -1,6 +1,7 @@
 # Compiler and flags
 
 PYTHON := python3
+UV := uv
 
 SRC_DIR := src
 TEST_DIR := tests
