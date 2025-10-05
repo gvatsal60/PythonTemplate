@@ -12,10 +12,8 @@ class TestStringMethods(unittest.TestCase):
 
     def test_split(self):
         s = 'hello world'
-        s_lst = list(s)
-
-        self.assertEqual(s.split(), s_lst)
 
 
+        self.assertEqual(s.split(), ['hello', 'world'])
 if __name__ == '__main__':
     unittest.main()
