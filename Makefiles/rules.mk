@@ -1,7 +1,7 @@
 include cfg/.env
 
 # Targets
-.PHONY: all test clean
+# .PHONY: all test clean
 
 NPROC := $(shell nproc)
 
