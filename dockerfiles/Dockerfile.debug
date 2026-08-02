@@ -1,7 +1,6 @@
 # ##########################################################################
 # File: Dockerfile
 # Author: Vatsal Gupta
-# Date: 14-Sep-2025
 # Description: Dockerfile for setting up a Python development environment
 #              using Microsoft's Dev Containers as the base image.
 #              It installs `uv` for managing Python packages and sets up
