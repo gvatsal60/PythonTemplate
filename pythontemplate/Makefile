@@ -20,7 +20,7 @@ build:
 	@$(UV) add --no-cache
 
 test:
-	if [ -z "$(FILE)" ]; then $(UV) run $(PYTHON) -m unittest discover -v -s $(TEST_DIR) -p "*_test.py"; \
+	@if [ -z "$(FILE)" ]; then $(UV) run $(PYTHON) -m unittest discover -v -s $(TEST_DIR) -p "*_test.py"; \
 	else $(UV) run $(PYTHON) -m unittest -v $(TEST_DIR)/$$FILE; fi
 
 clean:
