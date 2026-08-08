@@ -7,7 +7,7 @@ app.config['WTF_CSRF_ENABLED'] = True  # Sensitive
 csrf = CSRFProtect(app)  # Initialize CSRF protection
 
 
-@app.route('/')
+@app.route('/', methods=['GET'])
 def hello_world():
     return '<p>Hello, World!</p>'
 
