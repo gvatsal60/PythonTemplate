@@ -17,7 +17,7 @@ export UV_LINK_MODE := copy
 all: build
 
 build:
-	@$(UV) add --no-cache
+	@$(UV) sync --no-cache
 
 test:
 	@if [ -z "$(FILE)" ]; then $(UV) run $(PYTHON) -m unittest discover -v -s $(TEST_DIR) -p "*_test.py"; \
