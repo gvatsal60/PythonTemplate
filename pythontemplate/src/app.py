@@ -2,15 +2,15 @@ from flask import Flask
 from flask_wtf.csrf import CSRFProtect
 
 app = Flask(__name__)
-app.config['WTF_CSRF_ENABLED'] = True  # Sensitive
+app.config["WTF_CSRF_ENABLED"] = True  # Sensitive
 
 csrf = CSRFProtect(app)  # Initialize CSRF protection
 
 
-@app.route('/', methods=['GET'])
+@app.route("/", methods=["GET"])
 def hello_world():
-    return '<p>Hello, World!</p>'
+    return "<p>Hello, World!</p>"
 
 
-if __name__ == '__main__':
-    app.run(host='localhost', port=5000)
+if __name__ == "__main__":
+    app.run(host="localhost", port=5000)
